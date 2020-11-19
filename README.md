@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docker locally
+
+`docker build -t sample:dev .`
+
+`docker run --expose 3000 -p:3000:3000 --rm -v ${PWD}:/app -v /app/node_modules -e CHOKIDAR_USEPOLLING=true -e REACT_APP_MY_ENV=OYVINDDDDD sample:dev`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,3 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
